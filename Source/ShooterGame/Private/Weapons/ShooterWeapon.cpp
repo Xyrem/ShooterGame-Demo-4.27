@@ -867,10 +867,11 @@ void AShooterWeapon::SimulateWeaponFire()
 	AShooterPlayerController* PC = (MyPawn != NULL) ? Cast<AShooterPlayerController>(MyPawn->Controller) : NULL;
 	if (PC != NULL && PC->IsLocalController())
 	{
-		if (FireCameraShake != NULL)
-		{
-			PC->ClientStartCameraShake(FireCameraShake, 1);
-		}
+		//if (FireCameraShake != NULL)
+		//{
+		//	PC->ClientStartCameraShake(FireCameraShake, 1);
+		//}
+		
 		if (FireForceFeedback != NULL && PC->IsVibrationEnabled())
 		{
 			FForceFeedbackParameters FFParams;
