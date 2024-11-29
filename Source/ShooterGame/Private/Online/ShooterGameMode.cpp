@@ -35,7 +35,7 @@ AShooterGameMode::AShooterGameMode(const FObjectInitializer& ObjectInitializer) 
 	}
 
 	bAllowBots = !bBenchmarkMode;
-	bNeedsBotCreation = bBenchmarkMode;
+	bNeedsBotCreation = !bBenchmarkMode;
 	bUseSeamlessTravel = FParse::Param(FCommandLine::Get(), TEXT("NoSeamlessTravel")) ? false : true;
 }
 
